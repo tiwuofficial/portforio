@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portforio</title>
+    <meta id="viewport" name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="import" href="bower_components/polymer/polymer.html">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="import" href="hoge.html">
+    <link rel="import" href="original_components/large-image-box.html">
+    <link rel="import" href="original_components/middle-image-box.html">
+    <link rel="import" href="original_components/little-image-box.html">
+</head>
+
+<body>
+    <header class="header">
+        <img src="img/icon.png" class="icon">
+        <nav class="nav">
+            <ul>
+                <li class="nav-item">Profile</li>
+                <li class="nav-item">Profile</li>
+                <li class="nav-item">Profile</li>
+            </ul>
+        </nav>
+    </header>
+    <main id="content">
+        <div class="article">
+            <large-image-box img="img/IMG_0089_mini.jpg" class="item"></large-image-box>
+            <middle-image-box img="img/IMG_0571_mini.jpg" class="item"></middle-image-box>
+            <middle-image-box img="img/bg.png" class="item"></middle-image-box>
+            <little-image-box img="img/bg.png" class="item"></little-image-box>
+            <little-image-box img="img/bg.png" class="item"></little-image-box>
+            <little-image-box img="img/bg.png" class="item"></little-image-box>
+            <little-image-box img="img/bg.png" class="item"></little-image-box>
+            <little-image-box img="img/bg.png" class="item"></little-image-box>
+        </div>
+        <div class="navigation">
+            <p>
+                <a href="index-2.html"></a>
+            </p>
+        </div>
+    </main>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/jquery.infinitescroll.min.js"></script>
+    <script src="js/jquery.lazyload.min.js"></script>
+    <script>
+    $(function() {
+        $('#content').infinitescroll({
+            navSelector: ".navigation",
+            nextSelector: ".navigation a",
+            itemSelector: ".article",
+            animate: true,
+            extraScrollPx: 400,
+            loading: {
+                finishedMsg: "",
+                msgText: "",
+            }
+        });
+    });
+    </script>
+</body>
+
+</html>
