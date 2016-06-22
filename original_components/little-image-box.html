@@ -10,6 +10,7 @@
         margin-right: 4px;
         text-align: center;
         line-height: 225px;
+        vertical-align: top;
     }
     
     :host img {
@@ -26,8 +27,10 @@
     }
     </style>
     <template>
-        <img src="" alt="[[img]]" class="lazyLoad">
-        <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+        <a href="[[img]]" class="swipebox" title="piyo">
+            <img src="" alt="[[img]]" class="lazyLoad">
+            <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+        </a>
     </template>
 </dom-module>
 <script>

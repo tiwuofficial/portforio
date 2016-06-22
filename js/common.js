@@ -30,6 +30,7 @@
 
     $(function() {
         startLazyLoad($('img.lazyLoad'));
+        $('.swipebox').swipebox();
     });
 
 })($);
