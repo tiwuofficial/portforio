@@ -6,10 +6,10 @@
     <meta id="viewport" name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="import" href="bower_components/polymer/polymer.html">
+    <link rel="import" href="bower_components/platinum-sw/platinum-sw-elements.html">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/swipebox.min.css">
-    <link rel="import" href="hoge.html">
     <link rel="import" href="original_components/large-image-box.html">
     <link rel="import" href="original_components/middle-image-box.html">
     <link rel="import" href="original_components/little-image-box.html">
@@ -18,6 +18,9 @@
 </head>
 
 <body>
+    <platinum-sw-register auto-register>
+        <platinum-sw-cache cache-id="portforio"></platinum-sw-cache>
+    </platinum-sw-register>
     <header class="header">
         <img src="img/icon.png" class="icon">
         <nav class="nav">
