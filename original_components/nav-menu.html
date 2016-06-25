@@ -1,0 +1,39 @@
+<dom-module id="nav-menu">
+    <style>
+    :host {
+        width: 180px;
+        background-color: white;
+        height: 500px;
+        position: fixed;
+    }
+    
+    :host img {
+        width: 100%;
+    }
+    
+    :host .nav-item {
+        margin-top: 20px;
+        text-align: center;
+        letter-spacing: 2px;
+        font-weight: bold;
+        font-size: 2.3rem;
+    }
+    </style>
+    <template>
+        <header>
+            <img src="../img/icon.png" class="icon">
+            <nav class="nav">
+                <ul>
+                    <li class="nav-item">Profile</li>
+                    <li class="nav-item">Profile</li>
+                    <li class="nav-item">Profile</li>
+                </ul>
+            </nav>
+        </header>
+    </template>
+</dom-module>
+<script>
+Polymer({
+    is: 'nav-menu',
+});
+</script>
